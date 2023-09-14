@@ -1,4 +1,4 @@
-package Polymorphism.FinalKeyword;
+package Polymorphism.FinalKeyword_Constant;
 
 public class App {
     public static void main(String[] args) {

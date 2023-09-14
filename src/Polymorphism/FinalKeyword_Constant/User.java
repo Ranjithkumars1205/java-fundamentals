@@ -1,4 +1,4 @@
-package Polymorphism.FinalKeyword;
+package Polymorphism.FinalKeyword_Constant;
 
 public interface User {
     final String userName = null;
