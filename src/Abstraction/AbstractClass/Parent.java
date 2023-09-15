@@ -11,8 +11,8 @@ package Abstraction.AbstractClass;
 public class Parent extends Human {
 
     private Child child;
-
-    private final String role = "Mother";
+    // String saySomething = "happy Day!";
+    private final String role = "Mother"; // final variable means constant variable
 
     public Parent(String name, int age, String occupation) {
         super(name, age, occupation);

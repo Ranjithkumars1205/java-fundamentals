@@ -4,14 +4,15 @@ package Abstraction.AbstractClass;
  * If you want to define a contract without providing any implementation, you
  * should use interfaces in Java instead of abstract class.
  * It can't be instantiated
+ * Default methods are allowed only in interfaces
  */
 abstract class Human implements IHuman {
     String name; // it can have data members
     int age;
     String gender;
     String occupation;
-    static final String saySomething = "Have a blessed Day!"; // it can have final variables
-    static int year = 1996; // it can have static variables
+    static final String saySomething = "Have a blessed Day!"; // it can have final variables which we cant override
+    private static int year = 1996; // it can have static variables
 
     // It can have constructor and even main method as well. But It can't be
     // instantiated.
@@ -51,6 +52,8 @@ abstract class Human implements IHuman {
         System.out.println("Hello Guys!");
     }
 
+    // Default methods are allowed only in interfaces.Java(67109922)
+    // we can't overrride the final method
     final void saySomething() {
         System.out.println(saySomething);
     }
