@@ -13,6 +13,7 @@ abstract class Human implements IHuman {
     String occupation;
     static final String saySomething = "Have a blessed Day!"; // it can have final variables which we cant override
     private static int year = 1996; // it can have static variables
+    public double version = 1.0;
 
     // It can have constructor and even main method as well. But It can't be
     // instantiated.
@@ -56,6 +57,11 @@ abstract class Human implements IHuman {
     // we can't overrride the final method
     final void saySomething() {
         System.out.println(saySomething);
+        quotes();
+    }
+
+    private void quotes() {
+        System.out.println("Be good, do good");
     }
 
     /**

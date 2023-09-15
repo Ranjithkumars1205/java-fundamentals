@@ -19,6 +19,7 @@ public class Child extends Human {
 
     @Override
     public void introduce() {
+        version = 2.0;
         System.out.println("i'm " + name + " and " + role + " of " + parent.name + ". I'm working as " + occupation);
     }
 

@@ -11,8 +11,12 @@ package Abstraction.Interface;
 interface Human {
     String name = ""; // it can have data members
 
-    static final String saySomething = "Have a blessed Day!"; // it can have final variables
-    // only public, static & final are permitted. Private not permitted
+    static final String saySomething = "Have a blessed Day!";
+    /**
+     * By default, it is public, static and final, don't need to add it explicitly,
+     * check takeAway file
+     * Private not permitted
+     */
     static int year = 1996; // it can have static variables
 
     /**

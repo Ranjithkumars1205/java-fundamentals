@@ -2,7 +2,6 @@ package Abstraction.Interface;
 
 public class Parent implements Human, God {
     // private Child child;
-    // String saySomething = "happy Day!";
     int age;
     private final String role = "Mother"; // final variable means constant variable
 
@@ -22,6 +21,8 @@ public class Parent implements Human, God {
     }
 
     public void sayHello() {
+        // The final field Human.saySomething cannot be assignedJava(33554512)
+        // saySomething = "happy Day!";
         System.out.println("Hello Guys! " + "I'm " + name + "! " + "and " + age + " years old! ");
     }
 
