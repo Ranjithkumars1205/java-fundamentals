@@ -10,17 +10,21 @@ package Abstraction.AbstractClass;
 
 public class Parent extends Human {
 
-    // private Child child;
+    private Child child;
 
-    private final String role = "parent";
+    private final String role = "Mother";
 
     public Parent(String name, int age, String occupation) {
         super(name, age, occupation);
     }
 
+    void setChild(Child child) {
+        this.child = child;
+    }
+
     @Override
     public void introduce() {
-        System.out.println("i'm " + name + " and " + "I'm " + role + " of them");
+        System.out.println("i'm " + name + " and " + "I'm " + role + " of " + this.child.name);
     }
 
     @Override
@@ -29,8 +33,8 @@ public class Parent extends Human {
     }
 
     @Override
-    public void eat() {
-        System.out.println("I'm eating by " + role);
+    public void doDaily() {
+        System.out.println(role + ": Take healthy food, work consistently,");
     }
 
     @Override

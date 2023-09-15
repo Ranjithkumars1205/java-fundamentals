@@ -13,7 +13,7 @@ public interface IHuman {
 
     // void speak();
 
-    void eat();
+    void doDaily();
 
     void sleep();
 

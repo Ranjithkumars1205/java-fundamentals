@@ -33,7 +33,7 @@ public class App {
     public static void doAnimalStuff(Animal animal, String speed) {
         animal.makeNoise();
         animal.move(speed);
-        System.out.println(animal);
+        System.out.println(animal); // toString - don't need to call toString like animal.toString()
         System.out.println("_ _ _ _");
     }
 }

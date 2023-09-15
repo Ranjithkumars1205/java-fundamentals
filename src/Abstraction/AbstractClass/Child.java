@@ -9,7 +9,7 @@ package Abstraction.AbstractClass;
  */
 
 public class Child extends Human {
-    private final String role = "child";
+    private final String role = "Son";
     private Parent parent;
 
     public Child(String name, int age, String occupation, Parent parent) {
@@ -23,8 +23,8 @@ public class Child extends Human {
     }
 
     @Override
-    public void eat() {
-        System.out.println("I'm eating by " + role);
+    public void doDaily() {
+        System.out.println(role + ": Take healthy food, work consistently,");
     }
 
     @Override

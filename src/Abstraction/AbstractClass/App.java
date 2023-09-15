@@ -7,17 +7,23 @@ public class App {
                                                       // instance to child constructor.
         Human h2 = new Child("Ranjith Kumar", 27, "Software Developer", h1); // this is upcasting
 
-        h1.saySomething();
+        if (h2 instanceof Child) {
+            Child ranjith = (Child) h2; // downcasting
+            h1.setChild(ranjith);
+        }
+
         h1.sayHello();
+        h1.saySomething();
         h1.introduce();
-        h1.toString();
-        h1.eat();
+        System.out.println(h1); // Parent [role = Mother]
+        h1.doDaily();
         h1.sleep();
 
-        h2.saySomething();
         h2.sayHello();
+        h2.saySomething();
         h2.introduce();
-        h2.toString();
+        System.out.println(h2);
+        h2.doDaily();
         h2.sleep();
 
     }

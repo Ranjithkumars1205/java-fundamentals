@@ -62,7 +62,7 @@ abstract class Human implements IHuman {
      * But Overriding methods should be public (public void sleep)
      */
     public void sleep() {
-        System.out.println("I'm sleeping!");
+        System.out.println("Get 8 hours of sleep daily!");
     }
 
 }
