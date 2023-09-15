@@ -5,7 +5,7 @@ package Abstraction.Interface;
  * it can have static and final varible
  * Interfaces cannot have constructors
  * Multiple inheritance is supported with abstract method.. not default method
- * it can't have public method
+ * it can't have public method with body
  */
 
 interface Human {
