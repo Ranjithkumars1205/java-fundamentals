@@ -10,7 +10,7 @@ package StaticConcepts.StaticBlock;
 
 public class App {
     private static int staticVariable = 0;
-
+    // pls check counter.java as well
     static {
         staticVariable = 2;
         System.out.println("static block is invoked");

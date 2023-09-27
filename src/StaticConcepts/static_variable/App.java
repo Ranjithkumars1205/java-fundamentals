@@ -9,6 +9,7 @@ public class App {
         Counter c3 = new Counter();
         System.out.println("Number of instances created with static variable: " + Counter.count);
         System.out.println("Number of instances created without static variable: " + c3.instanceCount);
+        System.out.println("Static Block variable count: " + Counter.staticBlockCount);
         // If it is incremented, it won't reflect other objects. So each object will
         // have the value 1 in the count variable.
 

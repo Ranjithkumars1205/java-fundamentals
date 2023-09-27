@@ -13,6 +13,6 @@ public class University {
 
     public void addDepartment(Department department) {
         this.department.add(department);
-        System.out.println("department " + department);
+        System.out.println("department " + this.department);
     }
 }
