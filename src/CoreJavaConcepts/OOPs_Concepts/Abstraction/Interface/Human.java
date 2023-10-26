@@ -37,7 +37,8 @@ interface Human {
     }
 
     /**
-     * Illegal modifier for the interface method saySomething; only public, private,
+     * final - Illegal modifier for the interface method saySomething; only public,
+     * private,
      * abstract, default, static and strictfp are permittedJava(67109935)
      */
     // final void saySomething() {
